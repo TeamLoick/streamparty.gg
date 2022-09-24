@@ -21,8 +21,8 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd github/loickteam.org
+            cd github/streamparty.gg
             git pull
             npm install --frozen-lockfile
             npm run build
-            pm2 reload loickteam.org
+            pm2 reload streamparty.gg
